@@ -21,4 +21,9 @@ Run Time Procedures
 - Step 3:
     jenkins pipeline build the source code using gulp tool
 - Step 4:
-
+    Unit Test 
+- Step 5:
+   Docker build image
+- Step 6:
+    Deployment
+   
