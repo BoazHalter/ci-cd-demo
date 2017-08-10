@@ -1,0 +1,4 @@
+hash=$(git rev-parse HEAD)
+CRUMB=$(curl -s 'http://{{ all.jenkinsaAdminName }}:{{ all.jenkinsaAdminPWD }}@{{ all.ec2InternalIp }}:8080/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,":",//crumb)')
+curl -X POST -H "$CRUMB" "http://{{ all.jenkinsaAdminName }}:{{ all.jenkinsaAdminPWD }}@{{ all.ec2InternalIp }}:8080/job/test/buildWithParameters?token=hook&sha=$hash"
+exit 0
