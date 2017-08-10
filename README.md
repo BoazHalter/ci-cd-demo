@@ -9,11 +9,15 @@ it present the use of :
 
 - The stack described above will be the automated CI/CD pipe for this repo:
   https://github.com/ivogabe/gulp-typescript
+  triggerd by developers code change
 
-triggerd by developers code change
-
-LLD:
 Run Time Procedures
 Step 1:
-Ansible install docker and git 
+  a hook file installed in .git/hooks/pre-push is executed ( Curl command to invoke jenkins job)
+  sudo pip install ansible
+Step 2:
+  jenkins pipeline starting to run by default it clone the repo current state commit id and more info
+  #run ansible playbook installPrerequisites
+step 3:
+  
 
