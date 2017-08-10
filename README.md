@@ -5,7 +5,7 @@ it present the use of :
 - Git - as our local developer SCM repository
 - Jenkins - to orcastrate pipeline procedure
 - Docker - Deployment environment
-![Alt text](https://github.com/BoazHalter/ci-cd-demo/blob/master/CI-CD-infrastucture-architecture3.PNG "Arcitecture Overview:")
+![Alt text](https://github.com/BoazHalter/ci-cd-demo/blob/master/CI-CD-infrastucture-architecture5.PNG "Arcitecture Overview:")
 
 - The stack described above will be the automated CI/CD pipe for this repo:
   https://github.com/ivogabe/gulp-typescript

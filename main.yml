@@ -6,10 +6,3 @@
 - template:
   src: pre-push.j2
   dest: /home/ec2-user/gitrepo/gulp-typescript/.git/hooks/pre-push
-  
-- name: "Start Docker"
-  command: sudo service docker start
-- name: "add ec2-user to docker group"
-  command: sudo usermod -a -G docker ec2-user
-- name: "Validate Docker Installed"
-  command: docker info
