@@ -1,4 +1,10 @@
 # ci-cd-demo
 This is a basic DevOps CI\CD demo
 it present the use of :
-- Git local repository 
+- AWS EC2 - Instance As the main HOST of the following  
+- Git - as our local delveloper SCM repository
+- Jenkins - to orcastrate pipeline procedure
+- Docker - Deployment environment
+
+Arcitecture Overview:
+
