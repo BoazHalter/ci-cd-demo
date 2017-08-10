@@ -2,7 +2,13 @@
 - name: "Yum Update"
   command: sudo yum update -y
 - name: "Yum Install Git"
-  command: sudo yum install -y git 
+  command: sudo yum install -y git
+- git:
+    repo: git://github.com/ivogabe/gulp-typescript.git
+    dest: /home/ec2-user/gitrepo/
+- name: "Start Local GitRepo"
+  shell: cd  gulp-typescript && git init
 - template:
-  src: pre-push.j2
-  dest: /home/ec2-user/gitrepo/gulp-typescript/.git/hooks/pre-push
+    src: pre-push.j2
+    dest: /home/ec2-user/gitrepo/gulp-typescript/.git/hooks/pre-push
+
