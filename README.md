@@ -12,12 +12,13 @@ it present the use of :
   triggerd by developers code change
 
 Run Time Procedures
-Step 1:
-  a hook file installed in .git/hooks/pre-push is executed ( Curl command to invoke jenkins job)
-  sudo pip install ansible
-Step 2:
-  jenkins pipeline starting to run by default it clone the repo current state commit id and more info
-  #run ansible playbook installPrerequisites
-step 3:
-  
+- Step 1:
+    a hook file installed in .git/hooks/pre-push is executed ( Curl command to invoke jenkins job)
+    sudo pip install ansible
+- Step 2:
+    jenkins pipeline starting to run by default it clone the repo current state commit id and more info
+    #run ansible playbook installPrerequisites
+- Step 3:
+    jenkins pipeline build the source code using gulp tool
+- Step 4:
 
