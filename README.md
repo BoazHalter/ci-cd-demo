@@ -8,7 +8,7 @@ it present the use of :
 ![Alt text](https://github.com/BoazHalter/ci-cd-demo/blob/master/CI-CD-infrastucture-architecture3.PNG "Arcitecture Overview:")
 
 - The stack described above will be the automated CI/CD pipe for this repo:
-https://github.com/ivogabe/gulp-typescript
+  https://github.com/ivogabe/gulp-typescript
 
 triggerd by developers code change
 
