@@ -6,5 +6,5 @@ it present the use of :
 - Jenkins - to orcastrate pipeline procedure
 - Docker - Deployment environment
 
-Arcitecture Overview:
+![Alt text](ci-cd-demo/CI-CD-infrastucture-arcitechture.png?raw=true "Arcitecture Overview:")
 
