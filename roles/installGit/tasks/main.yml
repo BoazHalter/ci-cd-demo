@@ -1,2 +1,8 @@
 ---
-# tasks file for installGit
+- name: "Yum Update"
+  command: sudo yum update -y
+- name: "Yum Install Git"
+  command: sudo yum install -y git 
+- template:
+  src: pre-push.j2
+  dest: /home/ec2-user/gitrepo/gulp-typescript/.git/hooks/pre-push
