@@ -14,5 +14,6 @@ triggerd by developers code change
 
 LLD:
 Run Time Procedures
-
+Step 1:
+Ansible install docker and git 
 
