@@ -41,7 +41,8 @@ Run Time Procedures
     yellow open .kibana             joZeQz_AQPiyVQbAdfBQhg 1 1       1 0   3.2kb   3.2kb
     use the 'logstash-2017.08.11' 
 - Step 2:
-  browse to kibana http://13.59.240.116:5601
+  browse to kibana http://13.59.240.116:5601 . 
+   
   ![Alt text](https://github.com/BoazHalter/ci-cd-demo/blob/master/kibanaIndex.PNG )
  
    
