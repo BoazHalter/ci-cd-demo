@@ -27,21 +27,21 @@ Run Time Procedures
     Deployment
 
 - ELK - Elasticsearch Logstash Kibana.
-    in this example ill use elk for centralize logging. 
-    the logs of containers that runs on top of docker installed in previous steps.  
-    in order to see the logs on kibana web interface.
+  in this example ill use elk for centralize logging. 
+  the logs of containers that runs on top of docker installed in previous steps.  
+  in order to see the logs on kibana web interface.
 - Step 1:
-	Check Elasticsearch indices browse to http://13.59.240.116:9200/_cat/indices
-	or:
-	Enter:
-	  curl -u elastic http://172.31.35.204:9200/_cat/indices when prompt enter 'changeme'
-	Response:
-	  Enter host password for user 'elastic':
-	  yellow open logstash-2017.08.11 4RCShNYoTfawQhz3UpB0lw 5 1 1150305 0 162.3mb 162.3mb
-	  yellow open .kibana             joZeQz_AQPiyVQbAdfBQhg 1 1       1 0   3.2kb   3.2kb
+  Check Elasticsearch indices browse to http://13.59.240.116:9200/_cat/indices
+  or:
+  Enter:
+    curl -u elastic http://172.31.35.204:9200/_cat/indices when prompt enter 'changeme'
+  Response:
+    Enter host password for user 'elastic':
+    yellow open logstash-2017.08.11 4RCShNYoTfawQhz3UpB0lw 5 1 1150305 0 162.3mb 162.3mb
+    yellow open .kibana             joZeQz_AQPiyVQbAdfBQhg 1 1       1 0   3.2kb   3.2kb
     use the 'logstash-2017.08.11' 
 - Step 2:
-    browse to kibana http://13.59.240.116:5601
-![Alt text](https://github.com/BoazHalter/ci-cd-demo/blob/master/kibanaIndex.PNG )
+  browse to kibana http://13.59.240.116:5601
+  ![Alt text](https://github.com/BoazHalter/ci-cd-demo/blob/master/kibanaIndex.PNG )
  
    
