@@ -26,10 +26,10 @@ Run Time Procedures
 - Step 6:
     Deployment
 
-- ELK - Elasticsearch Logstash Kibana
-    in this example ill use elk for centralize logging 
-    the logs of containers that runs on top of docker installed in previous  
-    in order to see the logs on kibana web interface
+- ELK - Elasticsearch Logstash Kibana.
+    in this example ill use elk for centralize logging. 
+    the logs of containers that runs on top of docker installed in previous steps.  
+    in order to see the logs on kibana web interface.
 - Step 1:
 	Check Elasticsearch indices browse to http://13.59.240.116:9200/_cat/indices
 	or:
