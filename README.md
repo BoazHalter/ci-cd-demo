@@ -34,11 +34,15 @@ Run Time Procedures
   Check Elasticsearch indices browse to http://13.59.240.116:9200/_cat/indices
   or:
   Enter:
-    curl -u elastic http://172.31.35.204:9200/_cat/indices when prompt enter 'changeme'
+    {
+	  curl -u elastic http://172.31.35.204:9200/_cat/indices 
+	}  when prompt enter 'changeme'
   Response:
+  {
     Enter host password for user 'elastic':
-    yellow open logstash-2017.08.11 4RCShNYoTfawQhz3UpB0lw 5 1 1150305 0 162.3mb 162.3mb.
-    yellow open .kibana             joZeQz_AQPiyVQbAdfBQhg 1 1       1 0   3.2kb   3.2kb.
+    yellow open logstash-2017.08.11 4RCShNYoTfawQhz3UpB0lw 5 1 1150305 0 162.3mb 162.3mb
+    yellow open .kibana             joZeQz_AQPiyVQbAdfBQhg 1 1       1 0   3.2kb   3.2kb
+  }
     
 	Notice: 'logstash-2017.08.11' < will use it next step 
 - Step 2:
