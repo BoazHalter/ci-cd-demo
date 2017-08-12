@@ -6,11 +6,24 @@ it present the use of :
 - Jenkins - to orcastrate pipeline procedure
 - Docker - Deployment environment
 ![Alt text](https://github.com/BoazHalter/ci-cd-demo/blob/master/CI-CD-infrastucture-architecture5.PNG "Arcitecture Overview:")
+Tested on aws ec2 Amazon Linux ami
 
 - The stack described above will be the automated CI/CD pipe for this repo:
   https://github.com/ivogabe/gulp-typescript
-  triggerd by developers code change
-- In order to use this repo run: pip install ansible  
+  triggerd by developers code change
+- In order to use this repo 
+Step 1:
+  Enter: 
+    pip install ansible 
+  Response:
+    Pip installs Ansible correctly
+  Enter:
+    Ansible version
+  Response:
+    Ansible 2.2
+  Go to /etc/ansible/ansible.cfg and edit the : roles_path = /path/to/roles/dir
+  
+
 Run Time Procedures
 - Step 1:
     a hook file installed in .git/hooks/pre-push is executed ( Curl command to invoke jenkins job)
