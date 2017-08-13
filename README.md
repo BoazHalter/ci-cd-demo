@@ -31,7 +31,16 @@ The pipeline runt-time procedures description<br />
 <br />
 <br />
 
-Subject 2:
+Subject 2:<br />
+prerequisite: <br />
+# Run Elasticsearch <br />
+docker run -d -p 9200:9200 -e "http.host=172.31.35.204" -e "transport.host=127.0.0.1" elasticsearch:5.5.1 <br />
+# Run kibana <br />
+docker run  -e ELASTICSEARCH_URL=http://172.31.35.204:9200 -p 5601:5601 -d kibana <br />
+# Run logstash <br />
+docker run  -d -v /home/ec2-user/gitrepo/ci-cd-demo/:/config-dir  -v /home/mnt/docker/containers/:/usr/share/logstash/data logstash -f /config-dir/logstash.conf <br />
+docker ps <br />
+
 - ELK - Elasticsearch Logstash Kibana. <br />
   in this example ill use elk for centralize logging. <br />
   the logs of containers that runs on top of docker installed in previous steps.<br />  
