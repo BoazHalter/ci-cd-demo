@@ -1,0 +1,5 @@
+---
+all:
+  jenkinsaAdminName: admin
+  jenkinsaAdminPWD: admin password
+  ec2InternalIp: ip of jenkins host
