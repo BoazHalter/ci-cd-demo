@@ -1,30 +1,17 @@
 # ci-cd-demo
 This is a basic DevOps CI\CD demo
-it present the use of :
+it present 2 major Subject's CI/CD automated pipeline using :
 - AWS EC2 - Instance As the main HOST of the following  
 - Git - as our local developer SCM repository
 - Jenkins - to orcastrate pipeline procedure
 - Docker - Deployment environment
 ![Alt text](https://github.com/BoazHalter/ci-cd-demo/blob/master/CI-CD-infrastucture-architecture5.PNG "Arcitecture Overview:")
 Tested on aws ec2 Amazon Linux ami
-
 - The stack described above will be the automated CI/CD pipe for this repo:
   https://github.com/ivogabe/gulp-typescript
   triggerd by developers code change
-- In order to use this repo 
-Step 1:
-  Enter: 
-    pip install ansible 
-  Response:
-    Pip installs Ansible correctly
-  Enter:
-    Ansible version
-  Response:
-    Ansible 2.2
-  Go to /etc/ansible/ansible.cfg and edit the : roles_path = /path/to/roles/dir
-  
-
-Run Time Procedures
+Subject 1
+The pipeline runt-time procedures description
 - Step 1:
     a hook file installed in .git/hooks/pre-push is executed ( Curl command to invoke jenkins job)
     sudo pip install ansible
@@ -38,7 +25,11 @@ Run Time Procedures
     Docker build image
 - Step 6:
     Deployment
+<br />
+<br />
+<br />
 
+Subject 2:
 - ELK - Elasticsearch Logstash Kibana.
   in this example ill use elk for centralize logging. 
   the logs of containers that runs on top of docker installed in previous steps.  
@@ -62,5 +53,27 @@ Run Time Procedures
   browse to kibana http://13.59.240.116:5601 . <br />
    
   ![Alt text](https://github.com/BoazHalter/ci-cd-demo/blob/master/kibanaIndex.PNG )
- 
-   
+<br />
+<br />
+<br /> 
+files in repo:
+run.sh conatains run commands to run elk and jenkins used by me for testing dont run it as is use it 
+to deploy elk
+
+- In order to use this repo 
+Step 1:
+  Enter: 
+    pip install ansible 
+  Response:
+    Pip installs Ansible correctly
+  Enter:
+    Ansible version
+  Response:
+    Ansible 2.2
+  Go to /etc/ansible/ansible.cfg and edit the : roles_path = /path/to/roles/dir
+  Enter:
+  ansible-playbook preinstall 
+
+<br />
+<br />
+<br />
