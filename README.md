@@ -8,25 +8,25 @@ it present 2 major Subject's CI/CD automated pipeline using :
 ![Alt text](https://github.com/BoazHalter/ci-cd-demo/blob/master/CI-CD-infrastucture-architecture5.PNG "Arcitecture Overview:")
 
 <br />
-Tested on aws ec2 Amazon Linux ami
-- The stack described above will be the automated CI/CD pipe for this repo:
-  https://github.com/ivogabe/gulp-typescript
-  triggerd by developers code change
-Subject 1
-The pipeline runt-time procedures description
-- Step 1:
-    a hook file installed in .git/hooks/pre-push is executed ( Curl command to invoke jenkins job)
-    sudo pip install ansible
-- Step 2:
-    jenkins pipeline starting to run by default it clone the repo current state commit id and more info
-- Step 3:
-    jenkins pipeline build the source code using gulp tool
-- Step 4:
-    Unit Test 
-- Step 5:
-    Docker build image
-- Step 6:
-    Deployment
+Tested on aws ec2 Amazon Linux ami<br />
+- The stack described above will be the automated CI/CD pipe for this repo:<br />
+  https://github.com/ivogabe/gulp-typescript<br />
+  triggerd by developers code change<br />
+Subject 1<br />
+The pipeline runt-time procedures description<br />
+- Step 1:<br />
+    a hook file installed in .git/hooks/pre-push is executed ( Curl command to invoke jenkins job)<br />
+    sudo pip install ansible<br />
+- Step 2:<br />
+    jenkins pipeline starting to run by default it clone the repo current state commit id and more info<br />
+- Step 3:<br />
+    jenkins pipeline build the source code using gulp tool<br />
+- Step 4:<br />
+    Unit Test <br />
+- Step 5:<br />
+    Docker build image<br />
+- Step 6:<br />
+    Deployment<br />
 <br />
 <br />
 <br />
