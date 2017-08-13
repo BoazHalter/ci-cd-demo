@@ -6,6 +6,8 @@ it present 2 major Subject's CI/CD automated pipeline using :
 - Jenkins - to orcastrate pipeline procedure
 - Docker - Deployment environment
 ![Alt text](https://github.com/BoazHalter/ci-cd-demo/blob/master/CI-CD-infrastucture-architecture5.PNG "Arcitecture Overview:")
+
+<br />
 Tested on aws ec2 Amazon Linux ami
 - The stack described above will be the automated CI/CD pipe for this repo:
   https://github.com/ivogabe/gulp-typescript
@@ -30,10 +32,10 @@ The pipeline runt-time procedures description
 <br />
 
 Subject 2:
-- ELK - Elasticsearch Logstash Kibana.
-  in this example ill use elk for centralize logging. 
-  the logs of containers that runs on top of docker installed in previous steps.  
-  in order to see the logs on kibana web interface.
+- ELK - Elasticsearch Logstash Kibana. <br />
+  in this example ill use elk for centralize logging. <br />
+  the logs of containers that runs on top of docker installed in previous steps.<br />  
+  in order to see the logs on kibana web interface.<br />
 - Step 1: <br />
   Check Elasticsearch indices browse to http://13.59.240.116:9200/_cat/indices <br />
    or:<br />
@@ -60,19 +62,19 @@ files in repo:
 run.sh conatains run commands to run elk and jenkins used by me for testing dont run it as is use it 
 to deploy elk
 
-- In order to use this repo 
-Step 1:
-  Enter: 
-    pip install ansible 
-  Response:
-    Pip installs Ansible correctly
-  Enter:
-    Ansible version
-  Response:
-    Ansible 2.2
-  Go to /etc/ansible/ansible.cfg and edit the : roles_path = /path/to/roles/dir
-  Enter:
-  ansible-playbook preinstall 
+- In order to use this repo <br />
+Step 1:<br />
+  Enter: <br />
+    pip install ansible<br /> 
+  Response:<br />
+    Pip installs Ansible correctly<br />
+  Enter:<br />
+    Ansible version<br />
+  Response:<br />
+    Ansible 2.2<br />
+  Go to /etc/ansible/ansible.cfg and edit the : roles_path = /path/to/roles/dir<br />
+  Enter:<br />
+  ansible-playbook preinstall<br /> 
 
 <br />
 <br />
